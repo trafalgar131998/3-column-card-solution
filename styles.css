@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url(./fonts/BigShouldersDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(./fonts/LexendDeca-Regular.ttf);
+}
+/*styles*/
+.title{
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.context{
+    margin-bottom: 2em;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.logo{
+    margin-bottom: 2em;
+}
+.context, .click {
+    font-family: 'Lexend Deca', sans-serif;
+}
+.click{
+    background-color: #fff;
+    border: #fff 2px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.4sec ease-in-out;
+}
+/*card*/
+.container{
+    background-color:hsl(0, 0%, 95%);
+    overflow: hidden;
+    margin: 10% 5%;
+    padding: 10px;
+}
+.card1{
+    background-color: var(--orange);
+    margin: 50px 20px;
+    padding: 40px 45px 40px 40px; 
+    border-radius: 10px 10px 0 0;
+    line-height: 1.5em;
+}
+.card1 .click{
+    color: var(--orange)
+}
+.card1 .click:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.card2{
+    background-color: var(--dark-cyan);
+    margin: -50px 20px;
+    padding: 40px 30px 40px 40px;
+    line-height: 1.5em; 
+}
+.card2 .click{
+    color: var(--dark-cyan);
+}
+.card2 .click:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.card3{
+    background-color: var(--very-dark-cyan);
+    margin: 50px 20px;
+    padding: 40px 40px 40px 50px;
+    border-radius: 0 0 10px 10px;
+    line-height: 1.5em;
+}
+.card3 .click{
+    color: var(--very-dark-cyan);
+}
+.card3 .click:hover{
+    background-color: transparent;
+    color: #fff;
+}
+@media screen and (min-width: 1400px){
+    .card-item{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-items: center;
+        margin: 0.3em;
+    }
+    .container{
+        margin: 20%;
+        padding: 0.9em;
+    }
+    .context{
+        margin-bottom: 2em;
+    }
+    .context{
+        margin-bottom: 5em;
+        padding: 0.8em;
+        font-size: 0.7em;
+    }
+    .card1{
+        border-radius: 10px 0 0 10px;
+        margin: 20px -25px 20px 30px;
+        padding: 40px 40px 40px 40px; 
+    }
+    .card2{
+        margin: -50px 25px;
+        padding: 40px 45px 40px 40px;
+    }
+    .card3{
+        border-radius: 0 10px 10px 0;
+        margin: 20px 20px 20px -25px;
+        padding: 40px 40px 40px 50px;
+        line-height: 1.5em;
+    }
+}
