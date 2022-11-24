@@ -117,6 +117,7 @@
         font-size: 0.7em;
     }
     .card1{
+        color:hsl(31, 77%, 52%);
         border-radius: 10px 0 0 10px;
         margin: 20px -25px 20px 30px;
         padding: 40px 40px 40px 40px; 
