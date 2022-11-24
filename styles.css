@@ -116,6 +116,9 @@
         padding: 0.8em;
         font-size: 0.7em;
     }
+    .context, .special{
+        color: black;
+    }
     .card1{
         color:hsl(31, 77%, 52%);
         border-radius: 10px 0 0 10px;
